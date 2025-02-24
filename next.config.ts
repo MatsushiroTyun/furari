@@ -14,6 +14,7 @@ module.exports = {
       },
     ];
   },
+  transpilePackages: ['@aws-amplify/ui-react']
 };
 
 export default nextConfig;
