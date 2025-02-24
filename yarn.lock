@@ -2,14 +2,6 @@
 # yarn lockfile v1
 
 
-"@aws-amplify/adapter-nextjs@^0.0.2-next.a1ea0f2.0":
-  version "0.0.2-ui-preview.1aa6ecb.0"
-  resolved "https://registry.yarnpkg.com/@aws-amplify/adapter-nextjs/-/adapter-nextjs-0.0.2-ui-preview.1aa6ecb.0.tgz#9ea471c7ae61642d338d2990a67ffe076c66bd2d"
-  integrity sha512-0kjKrMLNbzQSDS8uQGh1U3MaevKjbc4FETw097pY0tT7BJV6PD9HnRh9PV+JUH32Haj9SGkv0VJhaVZhQviEQw==
-  dependencies:
-    cookie "0.5.0"
-    server-only "^0.0.1"
-
 "@aws-amplify/analytics@7.0.70":
   version "7.0.70"
   resolved "https://registry.yarnpkg.com/@aws-amplify/analytics/-/analytics-7.0.70.tgz#ab7de693ec5e0292c33a9c72e4c006e2b7f63ecc"
@@ -2639,11 +2631,6 @@ convert-source-map@^1.5.0:
   resolved "https://registry.yarnpkg.com/convert-source-map/-/convert-source-map-1.9.0.tgz#7faae62353fb4213366d0ca98358d22e8368b05f"
   integrity sha512-ASFBup0Mz1uyiIjANan1jzLQami9z1PoYSZCiiYW2FczPbenXc45FZdBZLzOT+r6+iciuEModtmCti+hjaAk0A==
 
-cookie@0.5.0:
-  version "0.5.0"
-  resolved "https://registry.yarnpkg.com/cookie/-/cookie-0.5.0.tgz#d1f5d71adec6558c58f389987c366aa47e994f8b"
-  integrity sha512-YZ3GUyn/o8gfKJlnlX7g7xq4gyO6OSuhGPKaaGssGB2qgDUS0gPgtTvoyZLTt9Ab6dC4hfc9dV5arkvc/OCmrw==
-
 cosmiconfig@^7.0.0:
   version "7.1.0"
   resolved "https://registry.yarnpkg.com/cosmiconfig/-/cosmiconfig-7.1.0.tgz#1443b9afa596b670082ea46cbd8f6a62b84635f6"
@@ -4400,11 +4387,6 @@ semver@^7.6.0, semver@^7.6.3:
   version "7.7.1"
   resolved "https://registry.yarnpkg.com/semver/-/semver-7.7.1.tgz#abd5098d82b18c6c81f6074ff2647fd3e7220c9f"
   integrity sha512-hlq8tAfn0m/61p4BVRcPzIGr6LKiMwo4VM6dGi6pt4qcRkmNzTcWq6eCEjEh+qXjkMDvPlOFFSGwQjoEa6gyMA==
-
-server-only@^0.0.1:
-  version "0.0.1"
-  resolved "https://registry.yarnpkg.com/server-only/-/server-only-0.0.1.tgz#0f366bb6afb618c37c9255a314535dc412cd1c9e"
-  integrity sha512-qepMx2JxAa5jjfzxG79yPPq+8BuFToHd1hm7kI+Z4zAq1ftQiP7HcxMhDDItrbtwVeLg/cY2JnKnrcFkmiswNA==
 
 set-blocking@^2.0.0:
   version "2.0.0"
