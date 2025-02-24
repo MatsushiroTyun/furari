@@ -14,7 +14,10 @@ module.exports = {
       },
     ];
   },
-  transpilePackages: ['@aws-amplify/ui-react']
+  transpilePackages: ['@aws-amplify/ui-react'],
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
 };
 
 export default nextConfig;

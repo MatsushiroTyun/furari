@@ -8,6 +8,7 @@ export default function Detail() {
     const [open,setOpen] = useState<boolean>(false);
     const [state,setState] = useState<money>();
 
+
     const openModal = async () => {
         setOpen(true);
         console.log(
