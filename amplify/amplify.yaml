@@ -1,0 +1,8 @@
+version: 1.0
+frontend:
+  phases:
+    preBuild:
+      commands:
+        - nvm install 18.19.0  # 必要なバージョンをインストール
+        - nvm use 18.19.0      # インストールしたバージョンを使用
+        - yarn install
