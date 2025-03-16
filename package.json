@@ -11,6 +11,8 @@
   "dependencies": {
     "@aws-amplify/core": "^6.10.1",
     "@aws-amplify/ui-react": "^6.9.1",
+    "@aws-sdk/client-dynamodb": "^3.767.0",
+    "@aws-sdk/lib-dynamodb": "^3.767.0",
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.0",
     "@mui/icons-material": "^6.4.5",
@@ -20,22 +22,30 @@
     "@types/json5": "^2.2.0",
     "@types/parse-json": "^7.0.0",
     "@types/prop-types": "^15.7.14",
-    "aws-amplify": "^6.13.1",
+    "amplify": "^0.0.11",
+    "aws-amplify": "^6.13.5",
+    "aws-cdk-lib": "2.180.0",
+    "constructs": "^10.0.0",
     "init": "^0.1.2",
     "next": "^15.1.7",
     "react": "18",
     "react-dom": "18"
   },
   "devDependencies": {
+    "@aws-amplify/backend": "^1.14.3",
+    "@aws-amplify/backend-cli": "^1.5.0",
     "@eslint/eslintrc": "^3",
     "@types/node": "^22.13.5",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "autoprefixer": "^10.4.20",
+    "aws-cdk": "2.1003.0",
+    "esbuild": "^0.25.1",
     "eslint": "^9",
     "eslint-config-next": "15.1.7",
     "postcss": "^8.5.3",
     "tailwindcss": "^4.0.8",
-    "typescript": "^5"
+    "tsx": "^4.19.3",
+    "typescript": "^5.0.0"
   }
 }
