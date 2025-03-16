@@ -1,22 +1,10 @@
-version: 1
-backend:
-  phases:
-    build:
-      commands:
-        - echo "Building backend..."
-
 frontend:
   phases:
     preBuild:
       commands:
-        - echo "Installing Node.js"
-        - nvm install 18.19.0 # Node.js のバージョンをインストール
+        - nvm install 18.19.0
         - nvm use 18.19.0
         - yarn install
     build:
       commands:
-        - echo "Building frontend"
         - yarn build
-
-runtime:
-  nodejs: 18.x
