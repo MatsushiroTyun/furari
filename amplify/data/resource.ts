@@ -16,12 +16,57 @@ const schema = a.schema({
       updatedAt: a.datetime(),
     })
     .authorization((allow) => [allow.guest()]),
+  Trip: a
+    .model({
+      id: a.id(),
+      name: a.string(),
+      startDate: a.datetime(),
+      endDate: a.datetime(),
+      createdAt: a.datetime(),
+      updatedAt: a.datetime(),
+      member:a.string().array(),
+    })
+    .authorization((allow) => [allow.guest()]),
+  receipt: a
+    .model({
+      id: a.id(),
+      name: a.string(),
+      amount: a.integer(),
+      date: a.datetime(),
+      createdAt: a.datetime(),
+      updatedAt: a.datetime(),
+      tripId: a.string(),
+      payerId: a.string(),
+      members: a.string().array(),
+    })
+    .authorization((allow) => [allow.guest()]),
+  receiptItem: a
+    .model({
+      id: a.id(),
+      name: a.string(),
+      createdAt: a.datetime(),
+      updatedAt: a.datetime(),
+    })
+    .authorization((allow) => [allow.guest()]),
+  settlement: a
+    .model({
+      id: a.id(),
+      amount: a.integer(),
+      date: a.datetime(),
+      tripId: a.string(),
+      payerId: a.string(),
+      borrowerId: a.string(),
+      members: a.string().array(),
+    })
+    .authorization((allow) => [allow.guest()]),
+
 });
 
 export type Schema = ClientSchema<typeof schema>;
 
 export const data = defineData({
   schema,
+  name:"Furari-dev",
   authorizationModes: {
     defaultAuthorizationMode: 'iam',
   },
