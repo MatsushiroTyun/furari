@@ -27,7 +27,7 @@ const schema = a.schema({
       member:a.string().array(),
     })
     .authorization((allow) => [allow.guest()]),
-  receipt: a
+  Receipt: a
     .model({
       id: a.id(),
       name: a.string(),
@@ -40,7 +40,7 @@ const schema = a.schema({
       members: a.string().array(),
     })
     .authorization((allow) => [allow.guest()]),
-  receiptItem: a
+  ReceiptItem: a
     .model({
       id: a.id(),
       name: a.string(),
@@ -48,7 +48,7 @@ const schema = a.schema({
       updatedAt: a.datetime(),
     })
     .authorization((allow) => [allow.guest()]),
-  settlement: a
+  Settlement: a
     .model({
       id: a.id(),
       amount: a.integer(),
